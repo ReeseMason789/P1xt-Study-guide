@@ -5,4 +5,11 @@ Notes:
 *Started me out with Java because it's the oldest and most widely used technology on the web. Most important for web development. Java Script, not just Java. 
 *code = source code. Tells computer what tasks to perform. 
 *words, numbers, symbols, operators, and arrangement of these, make up a language. 
-*
+*operator looks like this: a = b * 2; It is a mathematical operation. "a" and "b" are variables. variable = like a box you store something in, like a number. Or think of them as the number itself. 
+* a digit, like the number 2, is called a literal value. 
+*the "=" (assignment) and "*" (multiplication) are operators within themselves. 
+*explained beautifully. The statement a=b*2; tells the computer to: 1)get current value stored in variable b 2)multiply that value by 2 3)store the result into variable a. 
+*a program is a collection of statements. 
+*interpreter/compiler = transforms/translates code into commands computer can understand. 
+  *interpreting: translated top to bottom, line by line, every time program is run. 
+  *compiling: translation done ahead of time. When program is run, it's running this already compiled computer instructions. 
