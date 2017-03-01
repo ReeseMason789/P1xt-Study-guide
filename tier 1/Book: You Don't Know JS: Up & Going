@@ -29,9 +29,28 @@ Notes:
        *I input '29'.
        *Now the variable 'age' is equal to '29'. 
        *console.log(age); '29' should print out. 
-
-
-
+*a=42; 
+     *variable on left side called 'target variable'
+     *equal sign is called an operator. This particular operator used for assignment. 
+     *value on right side, called 'source value'. 
+     *To specify assignment of a variable, the variable is always on left hand side and value is on right side. 
+*'var' is short for variable. 
+     *example: var a=20; This sets 'a' as a variable, and give it the value of 20. 
+     *now that I've set 'scope'/precedent of 'a' being a variable, i can subsequently change it. 
+     *a=a+1; now variable 'a' is set to 21. 
+*compound assignment operators: +=, -=, *=, /=.
+     * Example: a+=2; same as a=a+2. Perform two operations. Tricky. 
+     *a-=5; same as a=a-5. 
+     *a*=9; same as a=a*9.
+     *a/=9; same as a=a/9. 
+*increment/decrement. Incrementing/decrementing. Basically, increasing/decreasing a variable by one. 
+     *x++; the '++' is the incrementer. Adds one, to the variable. Looks like this: x=x+1. 
+     *x--; x=x-1.
+*fuzzy logic. 
+     *'==' means roughly equal. a==b
+     *'===' means strictly equal. a===b
+     *'!=' means roughly not-equal. a!=b
+     *'!==' means strictly not-equal. a!==b
 
 
 
