@@ -46,12 +46,25 @@ Notes:
 *increment/decrement. Incrementing/decrementing. Basically, increasing/decreasing a variable by one. 
      *x++; the '++' is the incrementer. Adds one, to the variable. Looks like this: x=x+1. 
      *x--; x=x-1.
-*fuzzy logic. 
+     *if the plus or minus signs come before the variable, called prefix operator. Adds one then returns value. 
+     *postfix operator (x++) returns value of variable then adds one. 
+*fuzzy logic. These are operators. They perform an operation.
      *'==' means roughly equal. a==b
      *'===' means strictly equal. a===b
      *'!=' means roughly not-equal. a!=b
      *'!==' means strictly not-equal. a!==b
-
+*comparison.
+     *'<' means less than. 1<2
+     *'>' greater than. 2>1
+     *'<=' less than or roughly equal to. 3<=4
+     *'>=' greater than or roughly equal to. 2>=2.
+     *'=>' or '=<' doesn't work for comparisons. Need to have the greater/less part first. 
+*operand=variable. 
+     *A binary operator has two operands/variables, one on each side of the operator. 3+4
+     *unary operator has one variable/operand. Either before or after the operator. a++, or ++a.
+     *compound binary operator. a+=b; which is a=a+b.
+     *operand just means the thing/object that the operator is acting upon. 
+*Remainder operator. 12%5=2 or returns 2. 
 
 
 
