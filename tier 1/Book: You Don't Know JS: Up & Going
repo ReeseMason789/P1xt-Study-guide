@@ -65,6 +65,168 @@ Notes:
      *compound binary operator. a+=b; which is a=a+b.
      *operand just means the thing/object that the operator is acting upon. 
 *Remainder operator. 12%5=2 or returns 2. 
+*logical operators.
+     *&& (and)
+     *|| (or)
+*When you need to do math, you want a number.
+*when you need to print a word/characters on the screen, you need a string. A string is one or more: characters, words, sentences.
+*when you need to make a decision in your program, you need a boolean. boolean comes back with a value that is either true or false. 
+     *"I am a string"
+     *'I am also a string'
+     *42; number.
+     *true; false; boolean. 
+     *These are all types of values. A value can be a string/number/boolean. There are also arrays, objects, functions, and more. 
+*A number can also be a string, if it is in quotes. var a="42", this is a string. var b=42; this is a number. 
+*I can convert/coerce different value types. If I want to convert/coerce a string into a number.
+     *var a="42"; 
+      var b=number(a);
+      console.log(a); will print out string "42".
+      console.log(b); will print out number 42. 
+      'number' is a function that converts this type of string, to a type of number. In Javascript, this is called explicit coercion, from one type to another. There is implicit coercion, it's not a function I type out, and it happen automatically. Like this: "99.99" == 99.99; The comparison then becomes 99.99 == 99.99, which is true. 
+      *explicit conversion/coercion also called casting. It is performed by code instructions. 
+*Machine code= a series of binary 0s and 1s. 
+*choosing good names for variables and functions allows reader of code, and me, to better understand what is going on. 
+*To make a comment in Javascript
+     *//this is a single-line comment
+     *     /*This is a 
+                 multiline comment. */
+     * Multiline comment can also be put in the middle of text: var a= /*won't be read by machine*/ 42;
+*variable= the value within can vary over time.
+* I can declare a variable to hold a specific type of value. So only strings, or only numbers. This called 'type enforcement' or 'static typing'. 
+*'weak typing'/'dynamic typing' = variable can hold any type of value/type form. So a single variable can hold whatever a string one moment, a digit next, etc. Javascript uses weak/dynamic typing. 
+*To convert/coerce a number to string
+     *var a=1;
+      a=string(a);
+      console.log(a); will print out "1"
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
