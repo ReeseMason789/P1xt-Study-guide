@@ -18,7 +18,163 @@ Notes:
   b=a*2; 
   console.log(b); (this prints out logical conclusion.)
   42. 
-     *log(b) called a 'function call'. The b variable is handed to this 'log' function. 'log' commands cpu to take variable b and print it to the console. The 'console.' part is where 'log()' is located, i.e., in the console. 
-*Another way to create text/user output is with 'alert()'. And this spits out the answer in a pop-up box that I have to click 'ok'. 
-*A function is a rule, that is applied to an input, and gives an output. Example: input is 5, function is you add 3, output would be 8. Function = a constant rule that is applied to an input, and spits out an output. 
-*
+*log(b) called a 'function call'. The b variable is handed to this 'log' function. 'log()' commands cpu to take variable b and print it to the console. 
+*The 'console.' part is where the 'log()' function is located, i.e., in the console. Called an 'object reference'.  
+*Another way to create text/user output is with 'alert()' function. And this spits out the answer in a pop-up box that I have to click 'ok'. That's part of it's function: 1)To spit out answer 2)In a pop up box. 
+*A function is a rule, that is applied to an input, and gives an output. Example: input is 5 beans, function is you add 3 beans, output would be 8 beans. Function = a constant rule that is applied to an input, and spits out an output. 
+*The 'log()' fuction tells machine to show me/print what the value of 'b' is. 
+*'prompt()' is a function. It asks the user whatever is between it's parethesis, in a pop up box. The answer is then saved as a variable. 
+       *age=prompt("what's your age?");
+       *a box pops up.
+       *I input '29'.
+       *Now the variable 'age' is equal to '29'. 
+       *console.log(age); '29' should print out. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
