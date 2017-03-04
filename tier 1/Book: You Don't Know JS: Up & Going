@@ -22,7 +22,7 @@ Notes:
 *The 'console.' part is where the 'log()' function is located, i.e., in the console. Called an 'object reference'.  
 *Another way to create text/user output is with 'alert()' function. And this spits out the answer in a pop-up box that I have to click 'ok'. That's part of it's function: 1)To spit out answer 2)In a pop up box. 
 *A function is a rule, that is applied to an input, and gives an output. Example: input is 5 beans, function is you add 3 beans, output would be 8 beans. Function = a constant rule that is applied to an input, and spits out an output. 
-*The 'log()' fuction tells machine to show me/print what the value of 'b' is. 
+*The 'log()' function tells machine to show me/print what the value of 'b' is. 
 *'prompt()' is a function. It asks the user whatever is between it's parethesis, in a pop up box. The answer is then saved as a variable. 
        *age=prompt("what's your age?");
        *a box pops up.
@@ -35,7 +35,7 @@ Notes:
      *value on right side, called 'source value'. 
      *To specify assignment of a variable, the variable is always on left hand side and value is on right side. 
 *'var' is short for variable. 
-     *example: var a=20; This sets 'a' as a variable, and give it the value of 20. 
+     *example: var a=20; This sets 'a' as a variable, and gives it the value of 20. 
      *now that I've set 'scope'/precedent of 'a' being a variable, i can subsequently change it. 
      *a=a+1; now variable 'a' is set to 21. 
 *compound assignment operators: +=, -=, *=, /=.
@@ -82,7 +82,7 @@ Notes:
       var b=number(a);
       console.log(a); will print out string "42".
       console.log(b); will print out number 42. 
-      'number' is a function that converts this type of string, to a type of number. In Javascript, this is called explicit coercion, from one type to another. There is implicit coercion, it's not a function I type out, and it happen automatically. Like this: "99.99" == 99.99; The comparison then becomes 99.99 == 99.99, which is true. 
+      'number' is a function that converts this type of string, to a type of number. In Javascript, this is called explicit coercion, from one type to another. There is implicit coercion, it's not a function I type out, and it happens automatically. Like this: "99.99" == 99.99; The comparison then becomes 99.99 == 99.99, which is true. 
       *explicit conversion/coercion also called casting. It is performed by code instructions. 
 *Machine code= a series of binary 0s and 1s. 
 *choosing good names for variables and functions allows reader of code, and me, to better understand what is going on. 
@@ -93,7 +93,7 @@ Notes:
      * Multiline comment can also be put in the middle of text: var a= /*won't be read by machine*/ 42;
 *variable= the value within can vary over time.
 * I can declare a variable to hold a specific type of value. So only strings, or only numbers. This called 'type enforcement' or 'static typing'. 
-*'weak typing'/'dynamic typing' = variable can hold any type of value/type form. So a single variable can hold whatever a string one moment, a digit next, etc. Javascript uses weak/dynamic typing. 
+*'weak typing'/'dynamic typing' = variable can hold any type of value/type form. So a single variable can hold whatever. A string one moment, a digit next, etc. Javascript uses weak/dynamic typing. 
 *To convert/coerce a number to string
      *var a=1;
       a=string(a);
@@ -213,9 +213,20 @@ Notes:
      two();
      2
 *"only code inside that function, can access that function's scoped variables." Like looking through a periscope, piercing the veil of a function, and looking inside. 
-*lexical scope. If I set a variable within a function, that does not set it for the entire page of code. It is only set and definited within the function. 
+*lexical scope. If I set a variable within a function, that does not set it for the entire page of code. It is only set and defined within the function. 
 *Quicker way to call/print a variable is to just type it out with a semicolon and hit enter. No need to type out console.log();
-
+*function. console.log(); //the function is log, it prints whatever is in the parentheses. It could be a variable or the actual code inside the variable. Either way, the parentheses is where you input information into the function. The log function takes that information, and outputs it on the screen. Or the alert function does something similar. To have the user, not the coder, input information, use the prompt function. Once again, what is in the parentheses is what will be put into the function. So a question like, "what is your age? " will be input into prompt function. At which point the prompt function opens a box and asks user the question. When the user types and presses enter, the prompt function then stores this information in a variable. var age=prompt("what's your age? ");
+*It does matter what order I define my variables. 
+      *a=2;
+       b=a+1;
+       console.log(b);
+       //will print 3, correct answer.
+       
+       *b=a+1;
+        a=2;
+        console.log(b);
+        //will print undefined, or an incorrect answer. This has to be the way code is interpreted, which is from top to bottom, left to right. So that, 'a' is undefined, as there is no input for it yet. So therefore the variable b is still undefined. The interpreter/compiler doesn't retroactively apply the 'a' once it is defined. Therefore when I call 'b' via my function log, should print 'a+1', as 'a' isn't defined. Because I'm really just telling my function log to print whatever is in variable 'b'. 
+       
 
 
 
