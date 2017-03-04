@@ -181,18 +181,40 @@ Notes:
                     *function amount() {
                         return '$'+'1';
                            }
-                     console.log(amount) /*prints out: function amount() {
-                                                               return '$'+'1';
-                                                                  }  */  
+                     console.log(amount) /*prints out the function
+              *function amount() {
+                  return '$'+'1';
+                     }
+                 amount();
+                 //will return '$1'.              
             * function amount() {
                    return "$"+"1";
                       }
-                 var ice = amount()
+                 var ice = amount();
                  console.log(ice); 
-            // $1 will print. Here I'm setting my function to become a variable, which I can then print and it will work as a function, not just printing the function. Odd, but there you have it. 
-
-
-
+            // $1 will print. my function is disguised as a variable, which I can then print, and it will work as a function, not just printing the function. Odd, but there you have it. 
+*function doSomething(x) {
+   console.log("argument: " + x);
+      }
+ doSomething("Hi");
+ //will print 'argument: Hi'. This is how I input something into the function. Since the block within the function is linked to the argument. It's basically an undefined variable that is waiting to be defined by user. To define it, you call the function, and 'pass an argument' to the function. Call a function, use parentheses to input whatever you want into the function if the function is set up to receive it. If it's not set up to receive the argument, then it will print 'undefined'.
+*lexical scope. Each function gets its own scope. scope = code within a function's block. So I can have two of the same variables set to different things, but in different functions. 
+     *function one() {
+     var a=1;
+     console.log(a);
+     } 
+     one();
+     1
+     
+     *function two() {
+     var a=2;
+     console.log(a);
+     }
+     two();
+     2
+*"only code inside that function, can access that function's scoped variables." Like looking through a periscope, piercing the veil of a function, and looking inside. 
+*lexical scope. If I set a variable within a function, that does not set it for the entire page of code. It is only set and definited within the function. 
+*Quicker way to call/print a variable is to just type it out with a semicolon and hit enter. No need to type out console.log();
 
 
 
