@@ -98,17 +98,98 @@ Notes:
      *var a=1;
       a=string(a);
       console.log(a); will print out "1"
-*
-
-
-
-
-
-
-
-
-
-
+*Declare a constant variable. Do it at top of program/code, so that you can alter it in one place. 
+     *Convention is to capitalize the constant variable, with underscores between mulitiple words. 
+      var TAX_RATE = .08;
+     *But there is no command that occures that makes the variable fixed, it's purely by convention and not designating that variable as something else. 
+*var number = 1.2345; //four decimel places. 
+ console.log(number); //will print 1.2345
+ console.log(number.toFixed(2)); //'.toFixed' is a function that rounds digits to whatever I specify. This will print as 1.23.    capitalization of the function command is necessary. I need to have the 'F' capitalized for this to work. 
+    *JavaScript doesn't automatically format for dollars. 
+*Newest version of JavaScript called 'ES6'. I can set a constant variable so that it cannot later be changed. 
+      *  const TAX_RATE =.08;
+      *  'const' abbreviated for constant, and variable is implied. Very nice. 
+*grouping a series of statements together, called a 'block'/'compound' statement. Do this by wrapping statements inside a curly-brace pair {}.
+      *var amount = 50;
+       {amount = amount * 2;
+        console.log(amount);
+        }
+***I have no idea what grouping in a block does. I think it is used for conditional statements such as 'if/else, for, while'
+      *while (x<10) {
+        x++;
+         }
+           //I think this means that while x is less than 10, run the statements within the block/compound. "It allows you to use multiple statements where JavaScript expects only one statement." Allows multiple statements if the conditional statement is fulfilled. 
+*conditional statement
+     *var bank_balance=200;
+      var amount =50;
+      if (amount < bank_balance) {
+       console.log("I want to buy this.");
+       }
+       * the 'if' statement works similar to a function with a fork in the road. Either way, a function is executed. To do something or not do something, depending on the answer to the 'if' statement. 
+       *The if() statement, requires an expression between the parentheses that can be treated either true or false. If the statement is true, runs the block of statements. If false, nothing happens. 
+*an if statement, needs 'else' for when the condition is false and I want to do something when it's false. 
+     *const ACCESSORY_PRICE = 10;
+      var bank_balance=300;
+      var amount = 100;
+      if (amount<bank_balance) {  //if what is in parentheses is true, then run the following block of code.
+       console.log("I'll buy it.");
+       amount = amount+ACCESSORY_PRICE;  //if true, then I'll buy it and then add 10 to amount. 
+        }
+       else {  //otherwise, or if statement is false, run the following block of code. 
+        console.log("No thanks.");
+*This is a 'while' true loop. It will execute what is in the block, so long as the condition within the () is met.
+     while (numOfCustomers>0) {  
+      console.log("How may I help you?");
+      numOfCustomers=numOfCustomers-1;
+       }
+*This is a 'do while' loop. First it performs a loop/iteration, then it checks to make sure condition within () is met. So condition can be false, and it will still execute once. 
+      *do {
+       console.log("How may I help you?");
+       numOfCustomers=numOfCustomers-1;
+        } while (numOfCustomers>0);
+      *do {
+        statement
+         } while(condition);
+*a "for loop" is used to loop for a certain number of times. Has a specific format. 
+      *for (initialExpression; condition; incrementexpression)
+       statement
+      *for (var i=0; i<=9; i=i+1) {
+        console.log(i);
+         }
+      *var i=0              
+***What's the color coding for certain text in JavaScript?
+*The nuts and bolts of a function. A function is a named section of code, that is saved, and that code can be called/executed by calling that name. 
+*Fuction format: 1)name of the function 2)argument, enclosed in parentheses 3)Statement that defines the function, enclosed in brackets. 
+     *function name(argument) {
+       console.log("statement");
+      }
+      
+     *function printAmount() {
+       console.log(price);
+      }
+      var price=1;
+      printAmount(); //will print 1
+      
+     *function printAmount() {
+        console.log(amount.toFixed(2));
+       }
+      var amount =1;
+      printAmount(); //1
+      amount = amount * 2;
+      printAmount(); //2 
+*if I just print a function, then whatever is within the block will be returned verbatim. 
+                    *function amount() {
+                        return '$'+'1';
+                           }
+                     console.log(amount) /*prints out: function amount() {
+                                                               return '$'+'1';
+                                                                  }  */  
+            * function amount() {
+                   return "$"+"1";
+                      }
+                 var ice = amount()
+                 console.log(ice); 
+            // $1 will print. Here I'm setting my function to become a variable, which I can then print and it will work as a function, not just printing the function. Odd, but there you have it. 
 
 
 
