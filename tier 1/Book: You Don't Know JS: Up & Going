@@ -43,11 +43,18 @@ Notes:
      *a-=5; same as a=a-5. 
      *a*=9; same as a=a*9.
      *a/=9; same as a=a/9. 
+     
 *increment/decrement. Incrementing/decrementing. Basically, increasing/decreasing a variable by one. 
      *x++; the '++' is the incrementer. Adds one, to the variable. Looks like this: x=x+1. 
      *x--; x=x-1.
-     *if the plus or minus signs come before the variable, called prefix operator. Adds one then returns value. 
-     *postfix operator (x++) returns value of variable then adds one. 
+*if the plus or minus signs come before the variable, called prefix operator. Adds one then returns value. Adding 1 is performed first then it is incremented. 
+     *var x=1;
+      var y = ++x;  //x=x+1, which is x=1+1, x=2, then it's deep copied to 'y'. y=2. Deep copy means that first the operation is performed to obtain the new value of x, then it is copied to y. 
+*postfix operator (x++) returns value of variable, then then increments the value. The initial value of x is used for returning value, then it is incremented. 
+     *var x=1;
+      var y = x++;  //x=1, and x=x+1, which is x=1+1, x=2. But first x is copied to y, so y=1. Called a shallow copy, because first it is copied, then the operation is performed. 
+      *
+      
 *fuzzy logic. These are operators. They perform an operation.
      *'==' means roughly equal. a==b
      *'===' means strictly equal. a===b
@@ -226,8 +233,32 @@ Notes:
         a=2;
         console.log(b);
         //will print undefined, or an incorrect answer. This has to be the way code is interpreted, which is from top to bottom, left to right. So that, 'a' is undefined, as there is no input for it yet. So therefore the variable b is still undefined. The interpreter/compiler doesn't retroactively apply the 'a' once it is defined. Therefore when I call 'b' via my function log, should print 'a+1', as 'a' isn't defined. Because I'm really just telling my function log to print whatever is in variable 'b'. 
-       
-
+*A variable that is defined, can be changed by subsequent operations to that variable, duh right, but the tricky part is that you don't have to label that same variable as a variable each time you change it. 
+     *var a=20;
+      a=a+20;
+      console.log(a);
+      //will print 40, and I didn't define 'var a' a second time in order to change what is stored within variable 'a'. 
+*object peroperty access: '.' As in console.log();
+***"objects hold values at specific locations, called properties."
+*curly brackets/blocks are not used as stand alone, with code inside. This is extra work typing the brackets and is pointless, as you can just forgoe them and have the same effect. The brackets are good for conditional statements and loops. 
+*When naming a variable or function and the name has two or more words, use an _ between them. If it's a built in function, then the second word is capitalized, but no underscore. 
+*A loop is exactly like a condition, the difference being: 
+     *loop: if statement inside parentheses is true, run this code repeatedly until it is not true, then stop running the code within the block. While loop = while true, do this. 
+     *Do While loop = first run the code, then if/while statement is true, run it again. Difference being that a 'do...while' loop will always run the first time. 
+*var x=1;
+ while (x<10) {
+    x++;
+    if (x == 5) {
+       break;
+    }
+    console.log(x);
+ }
+*The 'for loop' is the most efficient because it defines everything you need within the structure of the paretheses. You define the variable used, the condition for whether or not to run the code again, and the incremental amount to apply. At which point, the curly brackets have instructions for what I want to do each time it runs. It's cleaner to use a 'for loop' instead of a 'while loop' or a 'do while' loop. 
+     *for (var x=1; x<9; x=x+1) {
+         console.log(x);
+      }
+      //1,2,3,4,5,6,7,8
+     
 
 
 
